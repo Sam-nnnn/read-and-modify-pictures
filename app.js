@@ -18,7 +18,7 @@ fileInputElement.onchange = (e) => {
 
 changeStyleButton.onclick = (e) => {
     e.preventDefault()
-    const prevStyle = outputImage.style
-    outputText.innerText = JSON.stringify( { ...prevStyle, "filter": `hue-rotate(${cssRotate.value}deg)` } )
-    outputImage.style = { ...prevStyle, filter: `hue-rotate(${cssRotate.value}deg)` } 
+    outputImage.style.filter = `blur(${Number(cssRotate.value)}px)`;
+
+    outputText.innerText = JSON.stringify(outputImage.style);
 }

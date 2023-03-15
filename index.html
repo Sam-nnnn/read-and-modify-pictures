@@ -8,11 +8,18 @@
 </head>
 <body>
     <div>
-        <label htmlfor="fileInput" >請放入圖片</label>
+        <label for="fileInput" >請放入圖片</label>
         <input type="file" id="fileInput" style="border:1px solid black; width: 200px; height: 200px" />
         <h1 id="outputText" >output</h1>
-        <label htmlfor="css-hueRotate">色調旋轉</label>
-        <input id="css-hueRotate" type="text" />
+        <div id="selectBlock"></div>
+        <label for="css-blur">模糊</label>
+        <input id="css-blur" class="input" type="text" />
+        <label for="css-contrast">對比</label>
+        <input id="css-contrast" class="input" type="text" />
+        <label for="css-graycale">灰階</label>
+        <input id="css-graycale" class="input" type="text" />
+        <label for="css-hueRotate">色調旋轉</label>
+        <input id="css-hueRotate" class="input" type="text" />
         <button id="changeStyleButton">send style</button>
         <img src="" id="outputImage" style="border: 1px solid black; width: 50%; height: 50%;" />
     </div>
